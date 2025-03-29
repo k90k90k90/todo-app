@@ -142,7 +142,7 @@ sudo npm install -g pm2
 
 Create a PM2 configuration file:
 ```bash
-cat > ecosystem.config.js << EOF
+cat > ecosystem.config.cjs << EOF
 module.exports = {
   apps: [{
     name: "todoapp",
@@ -158,7 +158,7 @@ EOF
 
 Start your application:
 ```bash
-pm2 start ecosystem.config.js
+pm2 start ecosystem.config.cjs
 ```
 
 Save the PM2 configuration to start on system boot:
